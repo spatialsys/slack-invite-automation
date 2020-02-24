@@ -37,6 +37,7 @@ aws cloudformation deploy \
 	--capabilities CAPABILITY_IAM \
 	--parameter-overrides \
 	CommunityName="${CommunityName}" \
+	Channel="${Channel}" \
 	SlackUrl="${SlackUrl}" \
 	SlackToken="${SlackToken}" \
 	InviteToken="${InviteToken}" \
