@@ -29,9 +29,11 @@ router.post("/invite", function(req, res) {
           form: {
             email: req.body.email,
             token: config.slacktoken,
-            ultra_restricted: true,
-            channels: config.channel,
-            set_active: true
+            set_active: true,
+            ...( config.channel ? {
+              ultra_restricted: true,
+              channels: config.channel
+            } : {})
           }
         },
         function(err, httpResponse, body) {

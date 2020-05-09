@@ -12,7 +12,7 @@ module.exports = {
   //   --compressed
   slacktoken: process.env.SLACK_TOKEN || "YOUR-ACCESS-TOKEN",
   // What channel should single-channel guests join?
-  channel: process.env.CHANNEL || "What channel should the user auto join?",
+  channel: process.env.CHANNEL || null,
   // an optional security measure - if it is set, then that token will be required to get invited.
   inviteToken: process.env.INVITE_TOKEN || null,
   // an optional security measure - if both are set, then recaptcha will be used.

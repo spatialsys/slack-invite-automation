@@ -13,3 +13,4 @@ RecaptchaSiteKey=
 RecaptchaSecretKey=
 Locale=en
 
+#Channel= <channel id, makes guests single-channel>
